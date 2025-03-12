@@ -36,21 +36,42 @@ const Projects = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
     arrows: true,
   };
 
   return (
-    <Container maxWidth="sm" sx={{ minHeight: "100vh", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: 2 }}>
-      <Card sx={{ width: "100%", padding: 2, boxShadow: 3, borderRadius: 3 }}>
-        <Typography
-          variant="h4"
-          align="center"
-          gutterBottom
-          sx={{ fontWeight: "bold", fontFamily: "Arial, sans-serif" }}
-        >
+    <Container 
+      maxWidth="sm" 
+      sx={{ 
+        minHeight: "100vh", 
+        display: "flex", 
+        flexDirection: "column", 
+        alignItems: "center", 
+        justifyContent: "center", 
+        padding: 2,
+        paddingTop: "80px", // Ensures content starts below fixed navbar
+      }}
+    >
+      {/* Title Section with Rounded Background */}
+      <Box
+        sx={{
+          backgroundColor: "blue",
+          color: "white",
+          textAlign: "center",
+          padding: "10px",
+          borderRadius: "12px", // Rounded corners
+          marginBottom: 2,
+          width: "100%",
+        }}
+      >
+        <Typography variant="h4" fontWeight="bold">
           Projects
         </Typography>
+      </Box>
+
+      {/* Project Slider */}
+      <Card sx={{ width: "100%", padding: 1, boxShadow: 3, borderRadius: 3 }}>
         <Slider {...sliderSettings}>
           {projects.map((project, index) => (
             <Card
@@ -58,9 +79,9 @@ const Projects = () => {
               sx={{
                 maxWidth: "100%",
                 boxShadow: 3,
-                borderRadius: 3,
+                borderRadius: 6,
                 transition: "0.3s",
-                "&:hover": { transform: "scale(1.03)" },
+                "&:hover": { transform: "scale(1.03)", boxShadow: 6 },
                 margin: "auto",
               }}
             >

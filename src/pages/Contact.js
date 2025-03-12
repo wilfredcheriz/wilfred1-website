@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Typography, Card, CardContent, Button, Link } from "@mui/material";
+import { Container, Typography, Card, CardContent, Button, Link, Box } from "@mui/material";
 import { VideoCall, Email, Phone } from "@mui/icons-material";
 
 const Contact = () => {
@@ -18,9 +18,17 @@ const Contact = () => {
         boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)"
       }}>
         <CardContent>
-          <Typography variant="h4" gutterBottom color="primary">
-            Contact Me
-          </Typography>
+          <Box sx={{
+            backgroundColor: "blue",
+            color: "white",
+            borderRadius: "8px",
+            padding: "10px",
+            mb: 2
+          }}>
+            <Typography variant="h4" gutterBottom>
+              Contact Me
+            </Typography>
+          </Box>
           <Typography variant="body1" sx={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 1 }}>
             <Email color="primary" />
             <Link href="mailto:wilfredwere99@gmail.com" color="inherit" underline="hover">

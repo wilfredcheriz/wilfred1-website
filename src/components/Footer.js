@@ -1,29 +1,25 @@
 import React from "react";
 import { Box, Typography, Button, IconButton } from "@mui/material";
 import { LinkedIn, Twitter, Email } from "@mui/icons-material";
-import { motion } from "framer-motion"; // ✅ Import Framer Motion
+import { motion } from "framer-motion";
 
 const colors = ["#ff5733", "#33ff57", "#3357ff", "#ff33a1", "#ffd700"];
 
 const Footer = () => {
   return (
     <Box
+      component="footer"
       sx={{
-        width: "100%",
+        mt: "auto", // Pushes footer to bottom when content is short
         py: 3,
         backgroundColor: "#2c3e50",
         color: "white",
         textAlign: "center",
-        position: "relative",
-        bottom: 0,
-        left: 0,
+        width: "100%",
       }}
     >
-      {/* Call-to-Action Section */}
       <motion.div
-        animate={{
-          color: colors, // Animate through colors
-        }}
+        animate={{ color: colors }}
         transition={{
           repeat: Infinity,
           duration: 5,
@@ -52,7 +48,6 @@ const Footer = () => {
         Contact Me
       </Button>
 
-      {/* Social Links */}
       <Box sx={{ mt: 2 }}>
         <IconButton
           href="https://linkedin.com/in/wilfred-were-381310259"
@@ -76,9 +71,8 @@ const Footer = () => {
         </IconButton>
       </Box>
 
-      {/* Copyright */}
       <Typography variant="body2" sx={{ mt: 2, opacity: 0.8 }}>
-        &copy; {new Date().getFullYear()} Wilfred Were | All Rights Reserved
+        &copy; {new Date().getFullYear()}   All Rights Reserved
       </Typography>
     </Box>
   );
