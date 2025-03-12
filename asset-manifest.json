@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/wilfred1-website/static/css/main.6e249d8f.css",
-    "main.js": "/wilfred1-website/static/js/main.dfc02f81.js",
+    "main.css": "/wilfred1-website/static/css/main.821d7b41.css",
+    "main.js": "/wilfred1-website/static/js/main.5312c9bd.js",
     "static/js/453.b0631c94.chunk.js": "/wilfred1-website/static/js/453.b0631c94.chunk.js",
+    "static/media/hero-bg.jpg": "/wilfred1-website/static/media/hero-bg.b1e2d7e1c4d8cfa4fbf8.jpg",
     "static/media/smart_factory.jpg": "/wilfred1-website/static/media/smart_factory.f25ffa5b73a2429fc7bd.jpg",
     "static/media/bending_machine.jpg": "/wilfred1-website/static/media/bending_machine.e2b470712ade82657188.jpg",
     "static/media/slick.svg": "/wilfred1-website/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -10,12 +11,12 @@
     "static/media/slick.ttf": "/wilfred1-website/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/wilfred1-website/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/wilfred1-website/index.html",
-    "main.6e249d8f.css.map": "/wilfred1-website/static/css/main.6e249d8f.css.map",
-    "main.dfc02f81.js.map": "/wilfred1-website/static/js/main.dfc02f81.js.map",
+    "main.821d7b41.css.map": "/wilfred1-website/static/css/main.821d7b41.css.map",
+    "main.5312c9bd.js.map": "/wilfred1-website/static/js/main.5312c9bd.js.map",
     "453.b0631c94.chunk.js.map": "/wilfred1-website/static/js/453.b0631c94.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6e249d8f.css",
-    "static/js/main.dfc02f81.js"
+    "static/css/main.821d7b41.css",
+    "static/js/main.5312c9bd.js"
   ]
 }
