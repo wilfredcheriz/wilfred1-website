@@ -1,5 +1,12 @@
 import React from "react";
-import { Card, CardContent, CardMedia, Typography, Box, Container } from "@mui/material";
+import {
+  Card,
+  CardContent,
+  CardMedia,
+  Typography,
+  Box,
+  Container,
+} from "@mui/material";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -41,28 +48,30 @@ const Projects = () => {
   };
 
   return (
-    <Container 
-      maxWidth="sm" 
-      sx={{ 
-        minHeight: "100vh", 
-        display: "flex", 
-        flexDirection: "column", 
-        alignItems: "center", 
-        justifyContent: "center", 
-        padding: 2,
-        paddingTop: "80px", // Ensures content starts below fixed navbar
+    <Container
+      disableGutters
+      maxWidth={false}
+      sx={{
+        minHeight: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        paddingTop: "80px",
+        backgroundColor: "#f9f9f9",
       }}
     >
-      {/* Title Section with Rounded Background */}
+      {/* Title Section */}
       <Box
         sx={{
           backgroundColor: "blue",
           color: "white",
           textAlign: "center",
           padding: "10px",
-          borderRadius: "12px", // Rounded corners
+          borderRadius: "12px",
           marginBottom: 2,
-          width: "100%",
+          width: "90%",
+          maxWidth: "1400px",
         }}
       >
         <Typography variant="h4" fontWeight="bold">
@@ -70,37 +79,77 @@ const Projects = () => {
         </Typography>
       </Box>
 
-      {/* Project Slider */}
-      <Card sx={{ width: "100%", padding: 1, boxShadow: 3, borderRadius: 3 }}>
-        <Slider {...sliderSettings}>
-          {projects.map((project, index) => (
-            <Card
-              key={index}
-              sx={{
-                maxWidth: "100%",
-                boxShadow: 3,
-                borderRadius: 6,
-                transition: "0.3s",
-                "&:hover": { transform: "scale(1.03)", boxShadow: 6 },
-                margin: "auto",
-              }}
-            >
-              <CardMedia component="img" height="250" image={project.image} alt={project.title} />
-              <CardContent>
-                <Typography variant="h6" fontWeight="bold" gutterBottom>
-                  {project.title}
-                </Typography>
-                <Typography variant="body2" color="text.secondary" paragraph>
-                  {project.description}
-                </Typography>
-                <Typography variant="body2" fontWeight="bold" color="primary">
-                  Technologies: {project.technologies.join(", ")}
-                </Typography>
-              </CardContent>
-            </Card>
-          ))}
-        </Slider>
-      </Card>
+      {/* Slider Content */}
+      <Box
+        sx={{
+          width: "100%",
+          maxWidth: "1400px",
+          px: { xs: 1, sm: 2, md: 4 },
+        }}
+      >
+        <Card
+          sx={{
+            width: "100%",
+            padding: { xs: 1, md: 2 },
+            boxShadow: 3,
+            borderRadius: 3,
+          }}
+        >
+          <Slider {...sliderSettings}>
+            {projects.map((project, index) => (
+              <Card
+                key={index}
+                sx={{
+                  width: "100%",
+                  boxShadow: 2,
+                  borderRadius: 4,
+                  transition: "0.3s",
+                  "&:hover": { transform: "scale(1.01)", boxShadow: 6 },
+                  margin: "auto",
+                }}
+              >
+                <CardMedia
+                  component="img"
+                  image={project.image}
+                  alt={project.title}
+                  sx={{
+                    height: { xs: 200, sm: 300, md: 400 },
+                    objectFit: "cover",
+                    borderTopLeftRadius: 16,
+                    borderTopRightRadius: 16,
+                  }}
+                />
+                <CardContent>
+                  <Typography
+                    variant="h6"
+                    fontWeight="bold"
+                    gutterBottom
+                    sx={{ fontSize: { xs: "1rem", md: "1.25rem" } }}
+                  >
+                    {project.title}
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    color="text.secondary"
+                    paragraph
+                    sx={{ fontSize: { xs: "0.85rem", md: "1rem" } }}
+                  >
+                    {project.description}
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    fontWeight="bold"
+                    color="primary"
+                    sx={{ fontSize: { xs: "0.85rem", md: "1rem" } }}
+                  >
+                    Technologies: {project.technologies.join(", ")}
+                  </Typography>
+                </CardContent>
+              </Card>
+            ))}
+          </Slider>
+        </Card>
+      </Box>
     </Container>
   );
 };

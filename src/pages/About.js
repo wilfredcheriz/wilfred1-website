@@ -81,15 +81,15 @@ const About = () => {
               wordBreak: "break-word",
             }}
           >
-            Passionate about innovation, I specialize in CAD design, mechanical systems, industrial automation, and predictive maintenance.
+            Passionate about innovation and Blockchain, I specialize in CAD design, mechanical systems, industrial automation, and predictive maintenance.
             With expertise in AutoCAD, SolidWorks, ANSYS, and CNC programming, I bring efficiency to engineering solutions.
             <br />
             <br />
-            I’m also skilled in Python, MATLAB, and JavaScript, combining engineering and technology to build IoT-powered smart systems.
+            I’m also skilled in Python,Next.js,React.js, and JavaScript frameworrks, combining engineering and technology to build Responsive websites and engineering solutions.
             My hands-on experience includes cargo handling equipment maintenance, automotive machining, and lathe operations.
             <br />
             <br />
-            Always eager to learn, innovate, and solve complex problems, I thrive at the intersection of engineering and software development to create efficient, smart, and scalable solutions.
+            Always eager to learn, innovate, and solve complex problems, I thrive at the intersection of engineering and Blockchain development to create efficient, smart, and scalable solutions.
           </Typography>
 
           {/* Resume Button */}

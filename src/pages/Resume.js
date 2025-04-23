@@ -96,32 +96,60 @@ const Resume = () => {
           </Box>
         </motion.div>
 
-        {/* Experience Section */}
-        <motion.div variants={sectionVariant} initial="hidden" animate="visible">
-          <Box sx={{ mt: 4, padding: 2, backgroundColor: "#f7f9fc", borderRadius: 2 }}>
-            <Heading icon={<WorkIcon sx={{ color: "white" }} />} text="Professional Experience" />
-            <Typography>
-              <strong>Kenya Ports Authority - Mechanical Engineering Intern (2023)</strong>
-              <br />
-              - Preventive and corrective maintenance on terminal cargo handling equipment.
-              <br />
-              - Worked with Ship-to-Shore Gantry Cranes, Rail-Mounted Gantries, and other heavy equipment.
-              <br />
-              - Assisted in troubleshooting critical failures, improving system uptime.
-              <br />
-              - Gained hands-on experience in industrial automation and maintenance.
-            </Typography>
-            <Typography mt={2}>
-              <strong>Crater Automobiles Ltd - Mechanical Engineering Intern (2022)</strong>
-              <br />
-              - Gained experience with lathe machines, metal joining, and vehicle repair.
-              <br />
-              - Diagnosed and fixed mechanical issues in petrol and diesel engines.
-              <br />
-              - Learned and applied workshop safety standards and maintenance procedures.
-            </Typography>
-          </Box>
-        </motion.div>
+   {/* Experience Section */}
+<motion.div variants={sectionVariant} initial="hidden" animate="visible">
+  <Box sx={{ mt: 4, padding: 2, backgroundColor: "#f7f9fc", borderRadius: 2 }}>
+    <Heading icon={<WorkIcon sx={{ color: "white" }} />} text="Professional Experience" />
+
+    <Typography>
+      <strong>Sagena Travels Agency – Tech Specialist (Feb 2025 - Present)</strong>
+      <br />
+      - Perform technical tasks to support travel operations and digital infrastructure.
+      <br />
+      - Connect local manpower with international employers, facilitating job placements abroad.
+      <br />
+      - Create CAD designs for travel assets and develop visually engaging graphic designs.
+      <br />
+      - Collaborate with cross-functional teams to optimize tech solutions and enhance client satisfaction.
+    </Typography>
+
+    <Typography mt={2}>
+      <strong>Gate.io – Business Developer, Africa (2022 - 2024)</strong>
+      <br />
+      - Led user acquisition campaigns across Africa, enrolling thousands of new users to Gate.io.
+      <br />
+      - Conducted strategic training on crypto trading, platform usage, and security awareness.
+      <br />
+      - Organized online and offline meetups to promote Gate.io services and grow regional market share.
+      <br />
+      - Collaborated with regional ambassadors and influencers to boost brand presence and community trust.
+    </Typography>
+
+    <Typography mt={2}>
+      <strong>Kenya Ports Authority – Mechanical Engineering Intern (2023)</strong>
+      <br />
+      - Preventive and corrective maintenance on terminal cargo handling equipment.
+      <br />
+      - Worked with Ship-to-Shore Gantry Cranes, Rail-Mounted Gantries, and other heavy equipment.
+      <br />
+      - Assisted in troubleshooting critical failures, improving system uptime.
+      <br />
+      - Gained hands-on experience in industrial automation and maintenance.
+    </Typography>
+
+    <Typography mt={2}>
+      <strong>Crater Automobiles Ltd – Mechanical Engineering Intern (2022)</strong>
+      <br />
+      - Gained experience with lathe machines, metal joining, and vehicle repair.
+      <br />
+      - Diagnosed and fixed mechanical issues in petrol and diesel engines.
+      <br />
+      - Learned and applied workshop safety standards and maintenance procedures.
+    </Typography>
+  </Box>
+</motion.div>
+
+
 
         {/* Projects Section */}
         <motion.div variants={sectionVariant} initial="hidden" animate="visible">
