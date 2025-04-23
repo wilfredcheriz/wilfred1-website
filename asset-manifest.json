@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/wilfred1-website/static/css/main.821d7b41.css",
-    "main.js": "/wilfred1-website/static/js/main.5312c9bd.js",
+    "main.js": "/wilfred1-website/static/js/main.677b4fff.js",
     "static/js/453.b0631c94.chunk.js": "/wilfred1-website/static/js/453.b0631c94.chunk.js",
     "static/media/hero-bg.jpg": "/wilfred1-website/static/media/hero-bg.b1e2d7e1c4d8cfa4fbf8.jpg",
     "static/media/smart_factory.jpg": "/wilfred1-website/static/media/smart_factory.f25ffa5b73a2429fc7bd.jpg",
@@ -12,11 +12,11 @@
     "static/media/slick.woff": "/wilfred1-website/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/wilfred1-website/index.html",
     "main.821d7b41.css.map": "/wilfred1-website/static/css/main.821d7b41.css.map",
-    "main.5312c9bd.js.map": "/wilfred1-website/static/js/main.5312c9bd.js.map",
+    "main.677b4fff.js.map": "/wilfred1-website/static/js/main.677b4fff.js.map",
     "453.b0631c94.chunk.js.map": "/wilfred1-website/static/js/453.b0631c94.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.821d7b41.css",
-    "static/js/main.5312c9bd.js"
+    "static/js/main.677b4fff.js"
   ]
 }
